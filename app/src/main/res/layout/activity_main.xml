@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:layout_editor_absoluteX="0dp"
+       tools:layout_editor_absoluteY="0dp">
+
+      <TextView
+          android:id="@+id/txtEnterTheName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="25dp"
+          android:layout_marginTop="50dp"
+          android:layout_marginRight="25dp"
+          android:background="@drawable/rounded_corner"
+          android:padding="18dp"
+          android:textStyle="bold"
+          android:text="@string/enter_the_name"
+          android:textAlignment="center"
+          android:textColor="#000000"
+          android:textSize="20sp" />
+
+      <EditText
+          android:id="@+id/etInputName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/txtEnterTheName"
+          android:layout_marginLeft="25dp"
+          android:layout_marginTop="40dp"
+          android:layout_marginRight="25dp"
+          android:background="@drawable/rounded_corner"
+          android:autofillHints=""
+          android:hint="@string/name_here"
+          android:inputType="text"
+          android:padding="18dp"
+          android:textColor="#000000"
+          android:textSize="18sp" />
+
+      <Button
+          android:id="@+id/btnSubmit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/etInputName"
+          android:layout_marginLeft="25dp"
+          android:layout_marginTop="250dp"
+          android:layout_marginRight="25dp"
+          android:padding="18dp"
+          android:onClick="createBirthdayCard"
+          android:text="@string/create_birthday_card"
+          android:textColor="#ffffff"
+          android:background="@color/primaryDark"
+          android:textSize="20sp"
+          android:textStyle="bold"
+
+          />
+
+   </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
